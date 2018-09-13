@@ -211,6 +211,15 @@
 </article>
 
 
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'Hello World'
+    }
+</script>
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -341,18 +350,6 @@
         <a href="https://imsun.net/posts/gitment-introduction/" target="_blank">Gitment：使用 GitHub Issues 搭建评论系统</a>
     </li>
     
-    <li>
-        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
-    </li>
-    
-    <li>
-        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
-    </li>
-    
-    <li>
-        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
-    </li>
-    
 </div>
                 <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
     
@@ -433,5 +430,27 @@
 <script src="/js/oni.js"></script>
 
 
+
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Wed Sep 12 2018 12:59:12 GMT+0800'
+      window.commentConfig.owner = '34835423'
+      window.commentConfig.repo = 'https://github.com/BlueM0untain/gitment.git'
+      window.commentConfig.client_id = 'c31458961089eaeddc04'
+      window.commentConfig.client_secret = '7271d78027699ff06e033f903534fdcc686c2bf9'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Wed Sep 12 2018 12:59:12 GMT+0800',
+        owner: '34835423',
+        repo: 'https://github.com/BlueM0untain/gitment.git',
+        client_id: 'c31458961089eaeddc04',
+        client_secret: '7271d78027699ff06e033f903534fdcc686c2bf9',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
